@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "fabric",
+  "version": "${version}",
+
+  "name": "fabric",
+  "description": "Paper plugin for TNetServer",
+  "authors": [],
+  "contact": {},
+
+  "license": "All-Rights-Reserved",
+
+  "environment": "server",
+  "entrypoints": {
+    "main": ["de.lachcrafter.fabric.Fabric"]
+  },
+
+  "mixins": [
+    "fabric.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
